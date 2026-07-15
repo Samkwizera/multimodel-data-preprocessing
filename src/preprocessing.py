@@ -1,8 +1,13 @@
+from pathlib import Path
+
 import pandas as pd
 
-RAW_SOCIAL = "data/raw/customer_social_profiles.csv"
-RAW_TRANS = "data/raw/customer_transactions.csv"
-OUT = "data/processed/merged_dataset.csv"
+# anchored to the repo, not the working directory, so the notebook and the command
+# line both find the data
+ROOT = Path(__file__).resolve().parents[1]
+RAW_SOCIAL = ROOT / "data/raw/customer_social_profiles.csv"
+RAW_TRANS = ROOT / "data/raw/customer_transactions.csv"
+OUT = ROOT / "data/processed/merged_dataset.csv"
 
 
 def load_social(path=RAW_SOCIAL):
