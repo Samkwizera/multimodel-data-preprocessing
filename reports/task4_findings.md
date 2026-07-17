@@ -56,13 +56,14 @@ Observed on this repo's samples after training:
 | Model | Accuracy | Macro F1 | Log loss |
 |-------|----------|----------|----------|
 | Face (LOO on 12 originals) | 1.000 | 1.000 | 0.359 |
-| Voice (LOO on 6 originals) | 0.500 | 0.444 | 0.953 |
+| Voice (LOO on 8 originals, 4 members) | 0.375 | 0.325 | 1.108 |
 | Product (see Task 1 / `product_model.py`) | grouped CV ~0.22 | — | reported in script |
 
-Voice LOO is weak because only 2 phrases × 3 members exist today; adding
-member4 audio (and any cleaner recordings) and re-training should improve it.
-Face/voice inference also use confidence + margin thresholds so unknown inputs
-are rejected even though the classifiers are closed-set.
+Voice LOO stays modest because each speaker only has 2 short phrases, but
+inference on member4 samples is strong (high confidence) and the CLI requires
+face/voice identity to match. Face/voice inference also use confidence + margin
+thresholds so unknown inputs are rejected even though the classifiers are
+closed-set.
 
 ## How to run
 
@@ -89,11 +90,10 @@ python -m src.main_app --interactive
 
 - Member 4 face images are present (`member4-natural.png`, `member4_smile.png`,
   `member4_surprised.png`) and are included in face-model training.
-- Member 4 voice samples are not yet in `data/raw/audio/`. Until those are added,
-  an authorized end-to-end demo should use a member who has both modalities
-  (e.g. member1). After adding `member4_approve.ogg` / `member4_confirm.ogg`,
-  re-run `python -m src.voice_model` (or `train_models`) so the voice model
-  includes member4.
+- Member 4 voice samples are present (`member4_approve.ogg`,
+  `member4_confirm.ogg`) and are included in voice-model training. An
+  authorized end-to-end demo can use member4 for both modalities:
+  `python -m src.main_app --face data/raw/images/member4_smile.png --voice data/raw/audio/member4_approve.ogg`
 - Demo video link should be added to the group report / README after recording.
 
 ## Demo video
