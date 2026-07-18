@@ -1,6 +1,6 @@
 # Task 3 – Sound Data Collection and Processing
 
-**Member:** Ajak Chol
+**Member:** Ajak Bul Zacharia Chol
 
 ---
 

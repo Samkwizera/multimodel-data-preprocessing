@@ -32,7 +32,7 @@ RESIZE = (64, 64)
 
 
 def _member_id(path: Path) -> str:
-    # member4-natural.png and member4_smile.png both map to member4
+    # member4_neutral.png and member4_smile.png both map to member4
     match = re.match(r"(member\d+)", path.stem.replace("-", "_"), flags=re.I)
     if not match:
         raise ValueError(f"cannot parse member id from {path.name}")

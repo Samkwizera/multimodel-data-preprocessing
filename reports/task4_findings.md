@@ -88,7 +88,7 @@ python -m src.main_app --interactive
 
 ## Notes
 
-- Member 4 face images are present (`member4-natural.png`, `member4_smile.png`,
+- Member 4 face images are present (`member4_neutral.png`, `member4_smile.png`,
   `member4_surprised.png`) and are included in face-model training.
 - Member 4 voice samples are present (`member4_approve.ogg`,
   `member4_confirm.ogg`) and are included in voice-model training. An
