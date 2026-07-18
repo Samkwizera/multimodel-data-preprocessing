@@ -59,6 +59,7 @@ multimodel-data-preprocessing-main/
 │
 ├── reports/
 │   ├── task1_findings.md
+│   ├── task2_findings.md
 │   ├── task3_findings.md
 │   └── task4_findings.md
 │
@@ -73,9 +74,9 @@ multimodel-data-preprocessing-main/
 | Task | Description | Member |
 |---|---|---|
 | **Task 1** | Data merge, EDA, product recommendation model | Samuel Kwizera Ihimbazwe |
-| **Task 2** | Face image collection, augmentation, feature extraction | Member 2 |
-| **Task 3** | Audio collection, augmentation, feature extraction | Tyrus (Member 4) |
-| **Task 4** | Model training, system integration, CLI demo | Member 4 |
+| **Task 2** | Face image collection, augmentation, feature extraction | Kyla Nyaboke Ochweri |
+| **Task 3** | Audio collection, augmentation, feature extraction | Ajak Bul Zacharia Chol |
+| **Task 4** | Model training, system integration, CLI demo | Berissa Muyizere |
 
 ---
 
@@ -85,7 +86,7 @@ multimodel-data-preprocessing-main/
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/Samkwizera/multimodel-data-preprocessing.git
 cd multimodel-data-preprocessing-main
 
 # Create and activate a virtual environment
@@ -180,7 +181,7 @@ The merge collapses the social table to one row per customer before joining, kee
 
 ---
 
-## Audio Features (Task 3 — Tyrus)
+## Audio Features (Task 3 — Ajak Bul Zacharia Chol)
 
 Feature extraction is implemented from scratch using `numpy` and `scipy` (no librosa):
 
@@ -200,7 +201,7 @@ Feature extraction is implemented from scratch using `numpy` and `scipy` (no lib
 ## Demo Video
 
 > _Add link after recording:_
-> `demo_video_link:`
+> `demo_video_link:` ⚠️ **TODO: Record and paste the demo video URL here before final submission.**
 
 ---
 
