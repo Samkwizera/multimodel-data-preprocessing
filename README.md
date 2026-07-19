@@ -319,8 +319,7 @@ The CLI in `src/main_app.py` implements the full authentication and recommendati
 
 ## Demo Video
 
-> _Add link after recording:_  
-> `https://`
+> https://youtu.be/v71tJky0QRU
 
 ---
 
@@ -335,4 +334,5 @@ numpy>=1.24
 scipy>=1.11
 soundfile>=0.12
 matplotlib>=3.7
+opencv-python>=4.0
 ```

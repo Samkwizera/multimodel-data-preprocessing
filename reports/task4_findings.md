@@ -98,8 +98,4 @@ python -m src.main_app --interactive
 
 ## Demo video
 
-_Add link after recording:_
-
-```
-demo_video_link: <paste URL here>
-```
+https://youtu.be/v71tJky0QRU
