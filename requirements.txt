@@ -6,3 +6,4 @@ numpy>=1.24
 scipy>=1.11
 soundfile>=0.12
 matplotlib>=3.7
+opencv-python>=4.0
